@@ -1,0 +1,210 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Shein Inspired Webpage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-roboto bg-gray-50">
+    <!-- Header with Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <div class="text-2xl font-bold text-gray-800">SHEIN GHANA</div>
+        <div class="hidden md:flex space-x-6">
+          <a class="text-gray-800 hover:text-red-500" href="#"> Women </a>
+          <a class="text-gray-800 hover:text-red-500" href="#"> Men </a>
+          <a class="text-gray-800 hover:text-red-500" href="#"> Kids </a>
+          <a class="text-gray-800 hover:text-red-500" href="#">
+            Home &amp; Pets
+          </a>
+          <a class="text-gray-800 hover:text-red-500" href="#"> Beauty </a>
+          <a class="text-gray-800 hover:text-red-500" href="#"> Sale </a>
+        </div>
+        <div class="flex space-x-4">
+          <a class="text-gray-800 hover:text-gray-500" href="#">
+            <i class="fas fa-search"></i>
+          </a>
+          <a class="text-gray-800 hover:text-gray-500" href="#">
+            <i class="fas fa-user"></i>
+          </a>
+          <a class="text-gray-800 hover:text-gray-500" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section with Carousel -->
+    <section class="relative">
+      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              href="https://www.pexels.com/photo/a-woman-wearing-black-heels-and-holding-a-bag-27035625/"
+              target="_blank"
+            >
+              <img
+                src="https://images.pexels.com/photos/27035625/pexels-photo-27035625.jpeg"
+                class="w-full h-96 object-cover"
+                alt="Fashionable Clothing"
+              />
+            </a>
+            <div
+              class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center"
+            >
+              <div class="text-center text-white px-4">
+                <h1 class="text-4xl font-bold mb-4">New Arrivals</h1>
+                <p class="text-lg mb-6">
+                  Discover the latest trends in fashion
+                </p>
+                <a class="bg-red-500 text-white px-6 py-3 rounded-full" href="#"
+                  >Shop Now</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Additional Carousel Items can be added here -->
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#hero-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="container mx-auto py-12 px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">Shop by Category</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <div class="category-card bg-white shadow-lg rounded-lg">
+          <img
+            src="https://placehold.co/300x400"
+            class="w-full h-64 object-cover rounded-t-lg"
+            alt="Category Image"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-gray-800">Women's Fashion</h3>
+            <a href="#" class="text-red-500 hover:underline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card bg-white shadow-lg rounded-lg">
+          <img
+            src="https://placehold.co/300x400"
+            class="w-full h-64 object-cover rounded-t-lg"
+            alt="Category Image"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-gray-800">Men's Fashion</h3>
+            <a href="#" class="text-red-500 hover:underline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card bg-white shadow-lg rounded-lg">
+          <img
+            src="https://placehold.co/300x400"
+            class="w-full h-64 object-cover rounded-t-lg"
+            alt="Category Image"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-gray-800">Beauty</h3>
+            <a href="#" class="text-red-500 hover:underline">Shop Now</a>
+          </div>
+        </div>
+        <div class="category-card bg-white shadow-lg rounded-lg">
+          <img
+            src="https://placehold.co/300x400"
+            class="w-full h-64 object-cover rounded-t-lg"
+            alt="Category Image"
+          />
+          <div class="p-4 text-center">
+            <h3 class="text-xl font-semibold text-gray-800">Home & Pets</h3>
+            <a href="#" class="text-red-500 hover:underline">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto py-12 px-6">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8">Featured Products</h2>
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+      >
+        <!-- Product Item -->
+        <div class="border p-4 rounded-lg bg-white shadow-lg">
+          <img
+            src="https://placehold.co/300x400"
+            alt="Stylish Dress"
+            class="w-full h-64 object-cover mb-4"
+          />
+          <h3 class="text-lg font-bold mb-2 text-gray-800">Stylish Dress</h3>
+          <p class="text-gray-600 mb-4">$29.99</p>
+          <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded-full"
+            >Add to Cart</a
+          >
+        </div>
+        <!-- More Product Items go here -->
+      </div>
+    </section>
+
+    <!-- Social Media Feed Section -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">
+          Follow Us on Instagram
+        </h2>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <!-- Instagram Image Grid -->
+          <img
+            src="https://placehold.co/300x300"
+            alt="Instagram"
+            class="object-cover w-full h-64 rounded-lg"
+          />
+          <img
+            src="https://placehold.co/300x300"
+            alt="Instagram"
+            class="object-cover w-full h-64 rounded-lg"
+          />
+          <img
+            src="https://placehold.co/300x300"
+            alt="Instagram"
+            class="object-cover w-full h-64 rounded-lg"
+          />
+          <img
+            src="https://placehold.co/300x300"
+            alt="Instagram"
+            class="object-cover w-full h-64 rounded-lg"
+          />
+        </div>
+        <a href="#" class="text-red-500 hover:underline mt-6 inline-block"
+          >View our Instagram</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
